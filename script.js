@@ -58,7 +58,7 @@ function randomizeColor() {
 
 function tweetQuote() {
   const quote = quoteText.innerText;
-  const twitterUrl = `https://twitter.com/intent/tweet?text=${quote} - Dad - icanhazdadjoke.com`;
+  const twitterUrl = `https://twitter.com/intent/tweet?text=${quote} - Dad`;
   window.open(twitterUrl, '_blank');
 }
 
