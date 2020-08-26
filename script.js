@@ -1,8 +1,11 @@
+const body = document.getElementsByTagName('body')[0];
 const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
 const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('loader');
+
+let currentStyle = 1;
 
 function showLoadingSpinner() {
   loader.hidden= false;
@@ -19,6 +22,7 @@ function removeLoadingSpinner() {
 // Get Quote From API
 async function getQuote(counter = 0) {
   showLoadingSpinner();
+  randomizeColor();
   const apiUrl = 'https://icanhazdadjoke.com';
   try {
     ++counter;
@@ -42,6 +46,15 @@ async function getQuote(counter = 0) {
   }
 }
 
+function randomizeColor() {
+  let clr = Math.floor(1 + Math.random()*6);
+  while(clr === currentStyle) {
+    clr = Math.floor(1 + Math.random()*6);
+  }
+  body.classList.replace(`bg${currentStyle}`, `bg${clr}`);
+  twitterBtn.classList.replace(`color${currentStyle}`, `color${clr}`);
+  currentStyle = clr;
+}
 
 function tweetQuote() {
   const quote = quoteText.innerText;

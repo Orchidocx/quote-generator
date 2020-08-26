@@ -7,9 +7,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #FFF;
-  background-image: url("background.svg");
-  /* background by SVGBackgrounds.com */
+  /* background-color: var(--bg1); */
   color: #000000;
   font-family: 'Oxygen', sans-serif;
   text-align: center;
@@ -104,13 +102,7 @@ button:focus {
 
 /* Media Query: Tablet or Smaller */
 @media screen and (max-width:1000px) {
-  .quote-container {
-    margin: auto 10px;
-  }
-  .quote-text {
-    font-size: 2rem;
-  }
-  .quote-author {
-    font-size: 1.5rem;
-  }
+  .quote-container {margin: auto 10px;}
+  .quote-text {font-size: 2rem;}
+  .quote-author {font-size: 1.5rem;}
 }

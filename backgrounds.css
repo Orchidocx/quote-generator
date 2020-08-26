@@ -1,0 +1,25 @@
+:root {
+  --bg1: #DAB4E5; /* Thistle */
+  --bg2: #FECAD5; /* Light Red */
+  --bg3: #FDAEA9; /* Melon */
+  --bg4: #F0CA86; /* Crayola Gold */
+  --bg5: #DDE59B; /* Pale Goldenrod */
+  --bg6: #9AD7A4; /* Eton Blue */
+}
+
+.color {transition: all .5s;}
+.color1 {color: var(--bg1);}
+.color2 {color: var(--bg2);}
+.color3 {color: var(--bg3);}
+.color4 {color: var(--bg4);}
+.color5 {color: var(--bg5);}
+.color6 {color: var(--bg6);}
+
+
+.bg {transition: all .5s;}
+.bg1 {background-color: var(--bg1);}
+.bg2 {background-color: var(--bg2);}
+.bg3 {background-color: var(--bg3);}
+.bg4 {background-color: var(--bg4);}
+.bg5 {background-color: var(--bg5);}
+.bg6 {background-color: var(--bg6);}
